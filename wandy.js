@@ -2948,8 +2948,8 @@ await error(util.format(err), m, m.chat)
 if (budy.startsWith('$')) {
                     if (!isCreator) return 
                     exec(budy.slice(2), (err, stdout) => {
-                        if (err) return newReply(err)
-                        if (stdout) return newReply(stdout)
+                        if (err) return m.reply(err)
+                        if (stdout) return m.reply(tdout)
                     })
                 }
 
